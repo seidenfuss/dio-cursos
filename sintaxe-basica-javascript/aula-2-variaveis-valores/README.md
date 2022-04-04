@@ -147,9 +147,9 @@ São tipos de operadores que consultam a relação entre valores:
 
  Símbolo    | Operação
 :---------: | :--------:           
-\ >           | maior do que
+\>           | maior do que
 <           | menor do que  
-\ >=          | maior ou igual à     
+\>=          | maior ou igual à     
 <=          | menor ou igual à
 
 
