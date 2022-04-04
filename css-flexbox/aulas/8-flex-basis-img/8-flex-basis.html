@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex basis</title>
+
+    <Style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid brown;
+            display: flex;
+        }
+
+        .items{
+            background-color: chocolate;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .b-auto{
+            flex-basis: auto;
+        }
+
+        .w100{
+            flex-basis: 100px;
+        }
+
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+
+        .fg-4{
+            flex-grow: 4;
+        }
+
+        .b-0{
+            flex-basis: 0;
+        }
+
+        .wr{
+            flex-wrap: wrap-reverse;
+        }
+
+        .w{
+            flex-wrap: wrap;
+        }
+
+
+    </Style>
+
+
+</head>
+<body>
+    <p> flex-basis: auto + fg-1 </p>
+    <div class="flex-container">
+
+        <div class="items b-auto fg-1">A</div>
+        <div class="items b-auto fg-1">BBB</div>
+        <div class="items b-auto fg-1">C</div>
+        <div class="items b-auto fg-1">DEF</div>
+    
+    </div>
+
+    <p> flex-basis: 0 (zero) + fg-1</p>
+    <div class="flex-container">
+
+        <div class="items b-0 fg-1">A</div>
+        <div class="items b-0 fg-1">BBB</div>
+        <div class="items b-0 fg-1">C</div>
+        <div class="items b-0 fg-1">DEF</div>
+    
+    </div>
+
+    <p> flex-basis:100px + fg variante + nowrap (default)</p>
+    <div class="flex-container">
+
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+        <div class="items w100  fg-3 ">LM</div>
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+        <div class="items w100  fg-3 ">LM</div>
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+    
+    </div>
+
+    <p> flex-basis auto+ fg-variante + wrap </p>
+    <div class="flex-container w">
+
+        <div class="items b-auto  fg-0 ">AA</div>
+        <div class="items b-auto  fg-1 ">BBB</div>
+        <div class="items b-auto  fg-2 ">C</div>
+        <div class="items b-auto  fg-3 ">DEF</div>
+        <div class="items b-auto  fg-0 ">GG</div>
+        <div class="items b-auto  fg-1 ">H</div>
+        <div class="items b-auto  fg-2 ">IJK</div>
+        <div class="items b-auto  fg-3 ">LM</div>
+        <div class="items b-auto  fg-0 ">AA</div>
+        <div class="items b-auto  fg-1 ">BBB</div>
+        <div class="items b-auto  fg-2 ">C</div>
+        <div class="items b-auto  fg-3 ">DEF</div>
+        <div class="items b-auto  fg-0 ">GG</div>
+        <div class="items b-auto  fg-1 ">H</div>
+        <div class="items b-auto  fg-2 ">IJK</div>
+        <div class="items b-auto  fg-3 ">LM</div>
+        <div class="items b-auto  fg-0 ">AA</div>
+        <div class="items b-auto  fg-1 ">BBB</div>
+        <div class="items b-auto  fg-2 ">C</div>
+        <div class="items b-auto  fg-3 ">DEF</div>
+        <div class="items b-auto  fg-0 ">GG</div>
+        <div class="items b-auto  fg-1 ">H</div>
+        <div class="items b-auto  fg-2 ">IJK</div>
+    
+    </div>
+
+    <p> flex-basis: 100px + fg-variante + wrap </p>
+    <div class="flex-container w">
+
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+        <div class="items w100  fg-3 ">LM</div>
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+        <div class="items w100  fg-3 ">LM</div>
+        <div class="items w100  fg-0 ">AA</div>
+        <div class="items w100  fg-1 ">BBB</div>
+        <div class="items w100  fg-2 ">C</div>
+        <div class="items w100  fg-3 ">DEF</div>
+        <div class="items w100  fg-0 ">GG</div>
+        <div class="items w100  fg-1 ">H</div>
+        <div class="items w100  fg-2 ">IJK</div>
+    
+    </div>
+
+    <p> flex-basis 0 (zero)+ fg-variante + wrap </p>
+    <div class="flex-container w">
+
+        <div class="items b-0  fg-0 ">AA</div>
+        <div class="items b-0  fg-1 ">BBB</div>
+        <div class="items b-0  fg-2 ">C</div>
+        <div class="items b-0  fg-3 ">DEF</div>
+        <div class="items b-0  fg-0 ">GG</div>
+        <div class="items b-0  fg-1 ">H</div>
+        <div class="items b-0  fg-2 ">IJK</div>
+        <div class="items b-0  fg-3 ">LM</div>
+        <div class="items b-0  fg-0 ">AA</div>
+        <div class="items b-0  fg-1 ">BBB</div>
+        <div class="items b-0  fg-2 ">C</div>
+        <div class="items b-0  fg-3 ">DEF</div>
+        <div class="items b-0  fg-0 ">GG</div>
+        <div class="items b-0  fg-1 ">H</div>
+        <div class="items b-0  fg-2 ">IJK</div>
+        <div class="items b-0  fg-3 ">LM</div>
+        <div class="items b-0  fg-0 ">AA</div>
+        <div class="items b-0  fg-1 ">BBB</div>
+        <div class="items b-0  fg-2 ">C</div>
+        <div class="items b-0  fg-3 ">DEF</div>
+        <div class="items b-0  fg-0 ">GG</div>
+        <div class="items b-0  fg-1 ">H</div>
+        <div class="items b-0  fg-2 ">IJK</div>
+    
+    </div>
+
+    <p> flex-basis: 0 (zero) + fg-4 wrap </p>
+    <div class="flex-container w">
+
+        <div class="items b-0 fg-4 ">AA</div>
+        <div class="items b-0 fg-4 ">BBB</div>
+        <div class="items b-0 fg-4 ">C</div>
+        <div class="items b-0 fg-4 ">DEF</div>
+        <div class="items b-0 fg-4 ">GG</div>
+        <div class="items b-0 fg-4 ">H</div>
+        <div class="items b-0 fg-4 ">IJK</div>
+        <div class="items b-0 fg-4 ">LM</div>
+    
+    </div>
+
+    <p> flex-basis:100px + fg-4 wrap </p>
+    <div class="flex-container w">
+
+        <div class="items w100 fg-4 ">AA</div>
+        <div class="items w100 fg-4 ">BBB</div>
+        <div class="items w100 fg-4 ">C</div>
+        <div class="items w100 fg-4 ">DEF</div>
+        <div class="items w100 fg-4 ">GG</div>
+        <div class="items w100 fg-4 ">H</div>
+        <div class="items w100 fg-4 ">IJK</div>
+        <div class="items w100 fg-4 ">LM</div>
+    
+    </div>
+
+</body>
+</html>

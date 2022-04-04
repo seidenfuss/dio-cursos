@@ -1,0 +1,31 @@
+body{
+    font: 30px arial-serif;
+    color: #3d0030;
+}
+
+.navbar{
+    background-color:#E5C0DD;
+}
+
+.quem-somos{
+    background-color:#fde2f7;
+
+}
+
+.margin{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.parcerias{
+    background-color:#d8b4d0;
+}
+
+.servicos{
+    background-color:#fde2f7 ;
+}
+
+.bg-footer{
+    background-color: black;
+    color: bisque;
+}

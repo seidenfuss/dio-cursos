@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex grow</title>
+
+    <style>
+
+        .flex-container{
+            display: flex;
+            border: 2px dotted black;
+            max-width: 500px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .item{
+            background-color: orangered;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+
+        .fg3{
+            flex-grow: 3;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <p>flex-grow:0</p>
+    <div class="flex-container">
+        <div class="item fg0">A</div>
+        <div class="item fg0">B</div>
+        <div class="item fg0">C</div>
+        <div class="item fg0">D</div>
+    </div>
+
+    <p>flex-grow:1</p>
+    <div class="flex-container">
+        <div class="item fg1">A</div>
+        <div class="item fg1">B</div>
+        <div class="item fg1">C</div>
+        <div class="item fg1">D</div>
+    </div>
+
+    <p>flex-grow:alternados 1 e 2</p>
+    <div class="flex-container">
+        <div class="item fg1">A</div>
+        <div class="item fg2">B</div>
+        <div class="item fg2">C</div>
+        <div class="item fg1">D</div>
+    </div>
+
+    <p>flex-grow:2</p>
+    <div class="flex-container">
+        <div class="item fg2">AAAAAA</div>
+        <div class="item fg2">BBB</div>
+        <div class="item fg2">C</div>
+        <div class="item fg2">D</div>
+    </div>
+
+    <p>flex-grow: 0,1,2 e 3</p>
+    <div class="flex-container">
+        <div class="item fg0">A</div>
+        <div class="item fg1">B</div>
+        <div class="item fg2">C</div>
+        <div class="item fg3">D</div>
+    </div>
+
+
+</body>
+</html>

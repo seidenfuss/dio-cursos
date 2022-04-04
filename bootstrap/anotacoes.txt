@@ -1,0 +1,10 @@
+Anotações curso DIO Bootstrap - 
+
+Download VSCODE: https://code.visualstudio.com/download 
+(mas pode ser qualquer editor que você tenha preferência)
+
+Download bootstrap:https://getbootstrap.com/docs/5.1/getting-started/download/
+
+Documentação bootstrap: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+Seletor de Cores (códigos): https://htmlcolorcodes.com/

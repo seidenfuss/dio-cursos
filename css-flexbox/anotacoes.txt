@@ -1,0 +1,96 @@
+Anotaçoes curso CSS flexbox com prof. Karen Santos
+
+* Fundamentos e aplicações da propriedade flexbox na criação de layouts responsivos, sem a necessidade da definição de valores fixos;
+construir páginas que vao se adaptar as mais variadas resoluções de tela sem precisar configurar/calcular cada valor para se adaptar;
+
+##Aula 1- Introdução ao flexbox;
+
+Flexbox foi projetado como um modelo de layout unidimensional e como um método que pode oferecer:
+    * Distribuição de espaço entre itens em uma interface e;
+    * Recursos de alinhamento.
+
+    ### Estrutura básica
+    
+    ### Diferença entre Flex container e Flex item
+        
+        ####Flex container: tag que envolve os itens, será nela que iremos aplicar a propriedade "display: flex". Transforma todos os seus filhos em flex itens;
+        Essa inicialização de container pode ser feita em qualquer tipo de tag: div, span, h1, h2,..., a, por exemplo; 
+    
+            ##### Algumas propriedades do flex container
+                * display: inicializa o container
+                * flex-direction: faz o direcionamento desses itens (seja em linha ou coluna)
+                * flex-wrap: quebra de linha ou não;
+                * flex-flow: abreviação para direction e wrap
+                * justify-content: alinha itens do container de acordo com a sua direção
+                * align-items: alinha os itens de acordo com o eixo do container
+                * align-content: alinha as linha desse container
+                
+        ##### Flex Item: São os elementos filhos (dependencias?) diretos do Flex Container. E também podem se tornar Flex Container.
+       Não é incomum que flex items tambem sejam containers, visto que um container pode ter filhos que podem ter filhos e esses tambem podem ter filhos.
+            
+            ##### Algumas propriedades do flex Item
+                * flex-grow: definir fator de crescimento;
+                * flex-basis: tamanho inicial antes da distribuição do espaço restante dentro do container;
+                * flex-shrink: definir a capacidade de redução;
+                * flex: abreviação para as três propriedades anteriores: grow, basis e shrink;
+                * order: relacionado a ordem de distribuição e o estágio desses itens; e
+                * align-self: definir o alinhamento de um item específico do nosso container.
+
+## Aula 2- Fundamentos do flexbox;
+
+Existe uma série de propriedades relacionadas a serem trabalhadas, porém elas vao ter uma distribuição onde elas pertecem ou a manipulação do nosso container que é o nosso elemento inicial ou elas estão relacionadas ao flex-item que são os filhos desse container;
+
+###Container (propriedades)
+
+#### Display Flex
+
+Sugestões: no VScode adicionar as seguintes extensões: HTML Snippets e Live HTML Previewer;
+
+Objetivos: Conhecer e aplicar a propriedade de inicia do flex container.
+Torna a tag (div, span, section, h1, h2,...,a> ou qualquer que seja) um elemento do tipo Flex container, e assim automaticamente todos os seus filhos diretos desta tag, tornam-se em flex items.
+
+Prática: 
+Começar digitando hmtl e selecionar a linguagem já sai a estrutura básica para trabalhar, economiza tempo e ajuda quem ainda nao sabe exatamente o que fazer;
+Dica: div.item*3 ---> cria 3 tags do tipo div com a classe item que foi definida no style do CSS;
+display: flex ->> modifica para que o item tenha o tamanho de seu conteúdo, mas aparece algo que se chama vazamento, ou seja quanto mais itens você adicionar dentro do container, após um certo numero de items nao será mais possivel conter esses itens e então devemos corrigir...
+
+
+
+#### Flex Direction
+1. Entender o comportamento padrão de orientação horizontal de um flez container;
+2. Aprender a modificar a orientação horizontal;
+
+Propriedade que estabelece o eixo principal do container, definindo assim a direção que os flex items são colocados no flex container.
+
+row (padrão): a direção do texto, esquerda para a direita;
+row-reverse: sentido oposto da direção do texto;
+collumn: ordenação de cima para baixo em coluna única;
+collumn-reverse: ordenação inversa, de baixo para cima;
+
+#### Flex wrap
+
+É a propriedade que define se os itens devem ou não quebrar a linha do nosso container;
+Por padrão eles não quebram linhas, isso faz com que os flex itens sejam compactados além do limite do conteúdo;
+Porém uma vez que os nossos containers nao consigam mais conter esses itens eles vão começar a vazar;
+
+*nowrap: é o padrão, não permite a quebra de linha.
+Duas situações:
+    1- em que eu tenho um container onde eu consigo que todos esses itens sejam comportados dentro dele;
+    2- em que um dos itens que já nao é mais comportado, entao eu começo a ter um problema de interfação com elementos vazando;
+* wrap: permite a quebra de linha assim que um dos flex itens nao puder mais ser compactado; Aqui nao temos mais o problema de vazamento mas passamos a ter com o espaçamento;
+* wrap-reverse: permite a quebra de linha assim que um dos flex item nao puder mais ser compactado, porem na direção contrária da linha, acima;
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Aula 3- Projeto integrador;
+

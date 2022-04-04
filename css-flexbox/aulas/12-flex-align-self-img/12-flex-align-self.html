@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid rgb(214, 27, 27);
+            max-width: 350px;
+            margin-bottom: 10px;
+            /*align-items: center;*/
+        }
+
+        .align-container-center{
+            align-items: center;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: rgb(0, 0, 0);
+            color:white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1>Row</h1>
+    <p>align-container:center + align-self: auto</p>
+   
+    <section class="flex-container align-container-center">
+
+        <div class="item auto">Ana</div>
+        <div class="item auto">Maria</div>
+        <div class="item auto">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item auto">a número 1</div>
+
+    </section>    
+
+    <p>align-self: auto</p>
+   
+    <section class="flex-container">
+
+        <div class="item auto">Ana</div>
+        <div class="item auto">Maria</div>
+        <div class="item auto">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item auto">a número 1</div>
+
+    </section>
+
+    <p>align-self: mixed</p>
+    
+    <section class="flex-container">
+
+        <div class="item center">Ana</div>
+        <div class="item start">Maria</div>
+        <div class="item stretch">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item end">a número 1</div>
+
+    </section>
+
+    <p>align-self: mixed</p>
+    
+    <section class="flex-container">
+
+        <div class="item end">Ana</div>
+        <div class="item center">Ana Maria</div>
+        <div class="item start">Ana Maria Bender</div>
+        <div class="item stretch">Ana Maria Bender Seidenfuss das Neves</div>
+    
+    </section>
+
+
+    <h1>Column</h1>
+    <p>align-container:center + align-self: auto</p>
+   
+    <section class="flex-container direction align-container-center">
+
+        <div class="item auto">Ana</div>
+        <div class="item auto">Maria</div>
+        <div class="item auto">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item auto">a número 1</div>
+
+    </section>    
+
+    <p>align-self: auto</p>
+   
+    <section class="flex-container direction">
+
+        <div class="item auto">Ana</div>
+        <div class="item auto">Maria</div>
+        <div class="item auto">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item auto">a número 1</div>
+
+    </section>
+
+    <p>align-self: mixed</p>
+    
+    <section class="flex-container direction">
+
+        <div class="item center">Ana</div>
+        <div class="item start">Maria</div>
+        <div class="item stretch">melhor do mundo, pelo menos segundo ela mesma:</div>
+        <div class="item end">a número 1</div>
+
+    </section>
+
+    <p>align-self: mixed</p>
+    
+    <section class="flex-container direction">
+
+        <div class="item end">Ana</div>
+        <div class="item center">Ana Maria</div>
+        <div class="item start">Ana Maria Bender</div>
+        <div class="item stretch">Ana Maria Bender Seidenfuss</div>
+    
+    </section>
+
+
+</body>
+</html>

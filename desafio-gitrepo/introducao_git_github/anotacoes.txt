@@ -1,0 +1,63 @@
+Anotações
+
+A- Baixar git no linux (ubuntu) via terminal: 
+	1- Abrir terminal (ctrl+alt+t)
+	2- digitar o seguinte comando (instala o git)
+		>> sudo apt-install git-all 
+	3- git version (verifica se o git foi instalado e qual a versão atual)
+
+
+	
+B- Configurar sua conta: email e username
+	1- configurar email
+	>> git config --global user.email "you@example.com"
+	2- configurar name
+	>> git config --global user.name "your name on github"	
+	3- quando você for rodar o comando push --- que envia as modificações após o commit, você deve colar no lugar da senha o seu TOKEN PESSOAL, 
+	este é criado nas configurações (clica no bonequinho de usuária):
+	>setting>developer settings> personal token>> generate token>> copia o token porque depois ele nao aparece mais, envia para você mesmo em um lugar bem bonito, abraços;
+
+
+C- Clonar repositório criado no github para máquina local:
+
+	0- Criar repositório no github e copiar link HTTPS;
+	1- Abrir a pasta local (via GUI e abrir no terminal ou abrir diretamente via terminal)
+ 		1.1- via GUI: clicar com botão direito e selecionar a opção abrir no terminal
+ 		2.2- via terminal: (ctrl+alt+t) -
+ 			>> l  (lista itens)
+ 			>> cd Documents  (abre pasta documents)
+ 			> l   (lista itens)
+ 			>> cd  Github (abre pasta previamente criada e denominada github
+ 			 ***Repetir estes passos até chegar na pasta desejada;**
+ 
+	2- No terminal, na pasta desejada, digitar o seguinte comando:
+ 		>> git clone + link copiado no item 0;
+ 		depois de terminar de clonar, digitar o comando:
+ 		>>git status  (verifica o estado atual do repositório local em relação ao repositório remoto, 
+		se está atualizado ou não, se precisa de alguma ação...)
+ 		
+D- Modificar arquivos e atualizar no github via gitbash***;
+	1- Criar uma pasta e um arquivo .txt na máquina local, e fazer suas anotações (por exemplo)
+	2- No terminal na pasta clonada executar o seguinte comando:
+		>> git status
+		2.2- você receberá um aviso de "untracked files", arquivos que não estão sendo 			
+		acompanhadas, seguido de uma sugestão que é utilizar o comando git add para passar 			
+		a acompanhar esses arquivos novos;
+	3- Execute o seguinte comando, para adicionar (git add) todos (-A) os novos arquivos:
+		>> git add -A
+	4- Execute o seguinte comando para "comitar" as mudanças realizadas no versionamento:
+		>> commit -m "sua mensagem curta sobre o que está mudando - 
+		exemplo: adicionar anotacoes do curso sobre git/github"
+	5- "Empurre" envie as mudanças para o github:
+		>> git push  (Ver sub-item 3 do item B)
+		>> git status (checar se está tudo atualizado)
+	6- "Puxe" receba as mudanças do repositorio remoto para a pasta local:
+		6.1- abrir a pasta local e rodar os seguintes comandos:
+			>> git remote update && git status
+			>> git pull && git status
+MINHA DÚVIDA: se eu faço isso eu vou perder algo? por exemplo, se a pessoa removeu algo que eu nao queria remover???
+
+ESTUDAR MAIS: como lidar com conflitos;
+
+
+

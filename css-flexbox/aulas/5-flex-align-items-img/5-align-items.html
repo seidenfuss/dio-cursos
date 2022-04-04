@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>ROW</h1>
+    <p>center</p>    
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>stretch</p>    
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>flex-start</p>    
+    <section class="container start">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>flex-end</p>    
+    <section class="container end">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>baseline</p>    
+    <section class="container baseline">
+        <div class="item">item 1</div>
+        <div class="item"> lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+
+    <h1>COLUMN</h1>
+    <p>center (column)</p>    
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>stretch (column)</p>    
+    <section class="container stretch column">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>flex-start (column)</p>    
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>flex-end (column)</p>    
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais</div>
+    </section>
+
+    <p>baseline (column)</p>    
+    <section class="container baseline column">
+        <div class="item">item 1</div>
+        <div class="item">lorem lorem lorem lorem</div>
+        <div class="item">item 3 e mais texto genérico mais e mais e ainda mais </div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <section class="container central center">
+        <div class="item"> texto genérico é muito fácil de conseguir copiando do lorem ipsum</div>
+    </section>
+
+</body>
+</html>
