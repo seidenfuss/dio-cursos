@@ -132,12 +132,12 @@ Ex.:
 
  Símbolo    | Operação          | Definição
 :---------: | :------:            | :---------: 
-+           | adição            | soma
--           | subtração         | diminui
-*           | multiplicação     | multiplica
-/           | divisao real      | retorna o valor real da divisão (com decimal)
-%           | divisão inteira   | resto da divisão
-**          | potenciação       | eleva o número à alguma potência
+\+           | adição            | soma
+\-           | subtração         | diminui
+\*           | multiplicação     | multiplica
+\/           | divisao real      | retorna o valor real da divisão (com decimal)
+\%           | divisão inteira   | resto da divisão
+\**          | potenciação       | eleva o número à alguma potência
 
 
 
