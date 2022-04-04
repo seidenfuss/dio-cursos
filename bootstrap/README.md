@@ -39,4 +39,4 @@
 
 ## Resultado:
 
-<img src="../master/img/maismulherTI.gif" width="800" height="500">
+<img src="../bootstrap/img/maismulherTI.gif" width="800" height="500">
