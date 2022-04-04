@@ -162,3 +162,5 @@ Símbolo     | Operação  | definição |
  &&         |  e        | retorna verdadeiro quando todos os valores lógicos forem verdadeiros
  \|\|       | ou        | retorna verdadeiro quando pelo menos um dos valores lógicos for verdadeiro
  !          | não       | inverte o valor ⇢ o que era verdadeiro passa a ser falso
+
+____________________________________________________________________________________________________________________________________________________________________________
