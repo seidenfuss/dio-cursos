@@ -43,22 +43,88 @@ console.log(typeof(funcao)); */
 
 // atribuição
 
-var atribuição = "ana";
+// var atribuição = "ana";
 
-// comparação
-var comparacao = '0' == 0;
-console.log(comparacao);
+// // comparação
+// var comparacao = '0' == 0;
+// console.log(comparacao);
 
-// comparação identica
-var comparacaoIdentica = '0' === 0;
-console.log(comparacaoIdentica);
+// // comparação identica
+// var comparacaoIdentica = '0' === 0;
+// console.log(comparacaoIdentica);
 
-// Operadores
+// Operadores aritméticos
 
-// finalizar essa parte amanhã <3
+// // adição
+// var adicao = 5 + 2;
+// console.log(adicao);
+
+// // subtração
+// var subtracao = 5 - 2;
+// console.log(subtracao);
 
 
+// // multiplicação
+// var multiplicacao = 5 * 2;
+// console.log(subtracao);
+
+// // divisao real
+
+// var divisaoReal = 5 / 2;
+// console.log(divisaoReal);
+
+// // divisao inteira
+
+// var divisaoInteira = 5 % 2;
+// console.log(divisaoInteira);
+
+// // potenciação
+// var potencia = 5 ** 2;
+// console.log(potencia);
 
 
+// // operadores relacionais
+
+// // maior que
+// var maiorQue = 5 > 2;
+// console.log(maiorQue);
+
+// // menor que
+// var menorQue = 5 < 2;
+// console.log(menorQue);
+
+// // maior ou igual a
+// var maiorouigual = 5 >= 2;
+// console.log(maiorouigual);
+
+// // menor ou igual a
+// var menorouigual = 5 <= 2;
+// console.log(menorouigual);
+
+
+// // operadores Lógicos
+
+// // e
+
+// // true -> true & true
+// var e = (5>1) && (2>1);
+// console.log(e);
+
+// // false -> false & true
+// var e = (5<1) && (2>1);
+// console.log(e);
+
+// // false -> false & false
+// var e = (5<1) && (2<1);
+// console.log(e);
+
+// // ou
+// var ou = (5<1) || (2>1);
+// console.log(ou);
+
+
+// // não
+// var e = !(5>1) && (2>1);
+// console.log(e);
 
 

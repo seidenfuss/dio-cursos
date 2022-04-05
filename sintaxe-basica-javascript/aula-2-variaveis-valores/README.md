@@ -1,3 +1,5 @@
+# Aula 2 - Sintaxe Básica em JavaScript - Profa. Diana Martine - Variáveis e seus Valores 
+
 ## Tipagem
 
 Tipagem é como uma regra de uso de dados, quanto mais forte for a tipagem, mais obrigatório é a declaração do tipo de dado;
