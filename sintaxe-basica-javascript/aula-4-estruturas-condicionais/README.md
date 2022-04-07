@@ -68,4 +68,22 @@ Ex.: **[condição] ? [instrução1] : [instrução2];**
 Lembre-se de utilizar a interrogação **?** e os dois pontos **:**
 Lê-se: [o jogador 1 tem pontuação maior que zero] **?** [Se sim (true), exiba 'marcou ponto'.] **:** [Se não (false), exiba não marcou ponto.]
 
-#PAROU EM 6minutos retornar amanhã.
+#### switch/case
+
+O **switch/case** funciona como uma estrutura condicional também;
+
+Ex.:
+
+        switch(${expressao}) {
+            case 1:
+                ${instrucao};
+            break;
+            case 2:
+                ${instrucao};
+            break;    
+        }
+
+## Estruturas de Repetição
+
+parou em 9:39 - retomar amanhã :D 
+
